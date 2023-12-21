@@ -1,55 +1,46 @@
 {
   "name": "ng2-select-base",
-  "version": "3.0.0",
-  "private": true,
-  "description": "Angular2 based replacement for select boxes",
+  "version": "0.0.0",
   "scripts": {
-    "link": "ngm link -p src --here",
-    "build": "ngm build -p src --clean",
-    "build.watch": "ngm build -p src --watch --skip-bundles",
-    "start": "ng serve --aot",
-    "pretest": "run-s lint build link",
-    "test": "ng test -sr"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
-  "main": "dist/index.umd.js",
-  "module": "index.js",
-  "typings": "index.d.ts",
-  "keywords": [
-    "angular2",
-    "select",
-    "selectify",
-    "angularjs"
-  ],
-  "author": "Vyacheslav Chub <vyacheslav.chub@valor-software.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ng2-select.git"
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~11.1.1",
+    "@angular/common": "~11.1.1",
+    "@angular/compiler": "~11.1.1",
+    "@angular/core": "~11.1.1",
+    "@angular/forms": "~11.1.1",
+    "@angular/platform-browser": "~11.1.1",
+    "@angular/platform-browser-dynamic": "~11.1.1",
+    "@angular/router": "~11.1.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.11.3"
   },
-  "bugs": {
-    "url": "https://github.com/valor-software/ng2-select/issues"
-  },
-  "homepage": "https://github.com/valor-software/ng2-select#readme",
-  "peerDependencies": {
-    "@angular/common": ">=11.0.0",
-    "@angular/core": ">=11.0.0"
-  },
-  "devDependencies": {},
-  "contributors": [
-    {
-      "name": "Vyacheslav Chub",
-      "email": "vyacheslav.chub@valor-software.com",
-      "url": "https://github.com/buchslava"
-    },
-    {
-      "name": "Dmitriy Shekhovtsov",
-      "email": "valorkin@gmail.com",
-      "url": "https://github.com/valorkin"
-    },
-    {
-      "name": "Oleksandr Telnov",
-      "email": "otelnov@gmail.com",
-      "url": "https://github.com/otelnov"
-    }
-  ]
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1101.2",
+    "@angular/cli": "~11.1.2",
+    "@angular/compiler-cli": "~11.1.1",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.2.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.1.2"
+  }
 }
